@@ -105,6 +105,7 @@ const questions = [
 ]
 
 let listOfScorers = [];
+let highestScorer = {name:'',score:-1};
 
 function quizPlay(){
     let currScore = 0,ans,Qno = 1;
@@ -129,8 +130,15 @@ function quizPlay(){
     }
     listOfScorers.push({name: name , score: currScore});
     console.log(`Your total Score: ${currScore}`);
+    //compare currScore with highestScore till now
+    if(currScore >highestScorer.score){
+        console.log(chalk.bgGreen.redBright.bold.inverse('New high Score!!'));
+        highestScorer.name = name;
+        highestScorer.score = currScore;
+    }
     console.log(chalk.cyanBright('List of participants:'));
     console.table(listOfScorers);
+    console.log(chalk.hex('#fd3a69')(`Highest Scorer: ${highestScorer.name} Score: ${highestScorer.score}`))
     
 }
 
