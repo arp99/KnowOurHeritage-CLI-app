@@ -148,7 +148,7 @@ for(;;){
     if(play.toLowerCase() === 'no'){
         break;
     }
-    while(play.toLowerCase() != 'yes'){
+    while(play.toLowerCase() != 'yes' && play.toLowerCase() != 'no'){
         console.log(chalk.bgRed('Oops!! Wrong input..'));
         play = readLineSync.question('Continue playing..?(Yes/No)');
     }
