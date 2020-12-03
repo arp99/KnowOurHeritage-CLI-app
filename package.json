@@ -1,0 +1,23 @@
+{
+  "name": "knowourheritage-cli-app",
+  "version": "1.0.0",
+  "description": "CLI based quiz app to help explore India's heritages",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arp99/KnowOurHeritage-CLI-app.git"
+  },
+  "author": "arpan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arp99/KnowOurHeritage-CLI-app/issues"
+  },
+  "homepage": "https://github.com/arp99/KnowOurHeritage-CLI-app#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "readline-sync": "^1.4.10"
+  }
+}
